@@ -1,7 +1,7 @@
 spring:
   cloud:
     config:
-      name: itoken-eureka
+      name: itoken-zuul
       uri: localhost:8888
       label: master
-      profile: prod
+      profile: dev

@@ -1,0 +1,19 @@
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@itoken-eureka1:8761/eureka
+  instance:
+    hostname: itoken-eureka2
+
+server:
+  port: 8762
+
+spring:
+  security:
+    user:
+      name: root
+      password: root
+  application:
+    name: itoken-eureka2
